@@ -2,6 +2,8 @@
 	display: block;
 	.est-layout-page(100%);
 	height: auto;
+	background: #fff;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
 	overflow: hidden;
 	.top-line{
 		display: block;
@@ -11,5 +13,46 @@
 		background: -webkit-linear-gradient(to right, #448dc2 , #6ff0ff );
 		background: -o-linear-linear-gradient(to right, #448dc2 , #6ff0ff );
 		background: -moz-linear-gradient(to right, #448dc2 , #6ff0ff );
+		_background: #448dc2;
+		background: #448dc2\9;
+	}
+}
+.nav{
+	display: block;
+	.est-layout-page(1200px);
+	height: 124px;
+	overflow: hidden;
+	.logo{
+		width: 286px;
+		text-align: center;
+		padding-top: 38px;
+	}
+	.nav-text{
+		display: block;
+		width: 914px;
+		height: 124px;
+		line-height: 124px;
+		overflow: hidden;
+		ul{
+			li{
+				display: block;
+				width: 120px;
+				height: 124px;
+				float: left;
+				a{
+					display: block;
+					width: 120px;
+					height: 124px;
+					font-size: 18px;
+					color: #201e26;
+					background: none;
+				}
+				a:hover{
+					background: url(../../images/nav-hover-bg.png) center no-repeat;
+					color: #fff;
+					transition: 0.3s ease-out;
+				}
+			}
+		}
 	}
 }

@@ -428,6 +428,8 @@ textarea:-ms-input-placeholder {
   margin-right: auto;
   margin-left: auto;
   height: auto;
+  background: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
   overflow: hidden;
 }
 .header .top-line {
@@ -440,4 +442,149 @@ textarea:-ms-input-placeholder {
   background: -webkit-linear-gradient(to right, #448dc2, #6ff0ff);
   background: -o-linear-linear-gradient(to right, #448dc2, #6ff0ff);
   background: -moz-linear-gradient(to right, #448dc2, #6ff0ff);
+  _background: #448dc2;
+  background: #448dc2\9;
+}
+.nav {
+  display: block;
+  width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  height: 124px;
+  overflow: hidden;
+}
+.nav .logo {
+  width: 286px;
+  text-align: center;
+  padding-top: 38px;
+}
+.nav .nav-text {
+  display: block;
+  width: 914px;
+  height: 124px;
+  line-height: 124px;
+  overflow: hidden;
+}
+.nav .nav-text ul li {
+  display: block;
+  width: 120px;
+  height: 124px;
+  float: left;
+}
+.nav .nav-text ul li a {
+  display: block;
+  width: 120px;
+  height: 124px;
+  font-size: 18px;
+  color: #201e26;
+  background: none;
+}
+.nav .nav-text ul li a:hover {
+  background: url(../../images/nav-hover-bg.png) center no-repeat;
+  color: #fff;
+  transition: 0.3s ease-out;
+}
+.l-banner-box {
+  width: 100%;
+  height: 528px;
+  display: block;
+  overflow: hidden;
+  text-align: center;
+}
+.section-focus-pic {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  text-align: center;
+  height: 528px;
+  margin: 0 auto 20px auto;
+}
+.section-focus-pic ul li {
+  position: absolute;
+  top: 0;
+  left: 1600px;
+  width: 100%;
+  height: 528px;
+  text-align: center;
+}
+.section-focus-pic ul li a {
+  text-align: center;
+}
+.section-focus-pic .pages {
+  width: 100%;
+  height: 528px;
+  text-align: center;
+}
+.section-focus-pic .controler {
+  position: absolute;
+  right: 426px;
+  bottom: 26px;
+}
+.section-focus-pic .controler b {
+  display: block;
+  float: left;
+  overflow: hidden;
+  width: 58px;
+  height: 12px;
+  margin: 0 0 0 14px;
+  cursor: pointer;
+  text-indent: -9999px;
+  background: url(../../images/btn-banner-nor.png) center center no-repeat;
+}
+.section-focus-pic .controler b.down {
+  background: url(../../images/btn-banner-hov.png) center center no-repeat;
+}
+.section-focus-pic .controler2 a {
+  position: absolute;
+  top: 50%;
+  display: block;
+  width: 42px;
+  height: 92px;
+  margin-top: -46px;
+}
+.section-focus-pic .controler2 a i {
+  display: block;
+  width: 42px;
+  height: 92px;
+  cursor: pointer;
+}
+.section-focus-pic .controler2 .prev {
+  left: 5px;
+}
+.section-focus-pic .controler2 .prev i {
+  background: url(../../images/btn-prev.png) center center no-repeat;
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+}
+.section-focus-pic .controler2 .prev:hover i {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+.section-focus-pic .controler2 .next {
+  right: 5px;
+}
+.section-focus-pic .controler2 .next i {
+  background: url(../../images/btn-next.png) center center no-repeat;
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+}
+.section-focus-pic .controler2 .next:hover i {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+.section-focus-pic .item-tit {
+  position: absolute;
+  top: 180px;
+  left: 84px;
+  font-size: 36px;
+  font-weight: bold;
+  width: auto;
+  height: 82px;
+  line-height: 82px;
+  color: #3b473f;
+}
+.section-focus-pic .item-tit span {
+  background: rgba(255, 255, 255, 0.8);
+  margin-top: 6px;
+  padding: 0 8px;
 }
