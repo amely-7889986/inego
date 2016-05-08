@@ -1,0 +1,443 @@
+/*! normalize-opentype v0.1.2 | MIT License | kennethormandy.com/journal/normalize-opentype-css */
+/**
+     * 1. Turn on kerning, standard ligatures, and proportional, oldstyle numerals
+     *    Turn off all other ligatures, tabular, lining numerals, and alternates
+     */
+html,
+body {
+  font-feature-settings: "kern" 1, "liga" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "dlig" 0;
+  /* 1. */
+}
+/* Headings
+    ========================================================================== */
+/**
+     * 1. Turn on discretionary ligatures for larger headings
+     */
+h1,
+h2,
+h3 {
+  font-feature-settings: "kern" 1, "liga" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "dlig" 1;
+  /* 1. */
+}
+/* Text-level semantics
+    ========================================================================== */
+/**
+     * 1. Change all letters to uppercase
+     * 2. Turn on small caps for upper and lowercase letters
+     */
+abbr {
+  text-transform: uppercase;
+  /* 1 */
+  font-feature-settings: "kern" 1, "liga" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "smcp" 1, "c2sc" 1;
+  /* 2 */
+}
+/*
+     * TODO: Turn on diagonal fractions where appropriate
+     */
+time {
+  font-feature-settings: "kern" 1, "liga" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0;
+}
+/*
+     * 1. Turn off kerning and ligatures,
+     *    Turn on lining, tabular numerals, slashed zero
+     */
+pre,
+kbd,
+samp,
+code {
+  font-feature-settings: "kern" 0, "liga" 0, "dlig" 0, "pnum" 0, "tnum" 1, "onum" 0, "lnum" 1, "zero" 1;
+  /* 1. */
+}
+/**
+     * 1. Turn on proper supercript numerals
+     */
+sup {
+  font-feature-settings: "kern" 1, "liga" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "dlig" 0, "sups" 1;
+  /* 1. */
+}
+/**
+     * 1. Turn on proper subscript numerals
+     */
+sub {
+  font-feature-settings: "kern" 1, "liga" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "dlig" 0, "subs" 1;
+  /* 1. */
+}
+/* Tables
+    ========================================================================== */
+/**
+     * 1. Turns on tabular, lining numerals and slashed zero
+     *    Turns off kerning, as it could impact tabular numerals
+     */
+table {
+  font-feature-settings: "kern" 0, "liga" 1, "pnum" 0, "tnum" 1, "onum" 0, "lnum" 1, "zero" 1;
+  /* 1. */
+}
+/**
+     * 1. Revert to defaults for table headings
+     */
+table thead,
+table tfoot {
+  font-feature-settings: "kern" 1, "liga" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "dlig" 0;
+  /* 2. */
+}
+/* Forms
+    ========================================================================== */
+/**
+     * 1. Turns on lining, proportional numerals without clarified zeroes
+     * TODO: Additional input modes https://developer.mozilla.org/en/docs/Web/HTML/Element/Input#attr-inputmode
+     */
+input[type="color"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="number"],
+input[type="range"],
+input[type="tel"],
+input[type="week"] {
+  font-feature-settings: "kern" 0, "liga" 1, "pnum" 1, "tnum" 0, "onum" 0, "lnum" 1, "zero" 0;
+  /* 1. */
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-family: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  vertical-align: middle;
+}
+caption,
+th,
+td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+a img {
+  border: none;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+main {
+  display: block;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-family: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+audio:not([controls]),
+[hidden] {
+  display: none;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+main {
+  display: block;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-family: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+audio:not([controls]),
+[hidden] {
+  display: none;
+}
+body {
+  font-family: "ff-tisa-web-pro-1", "ff-tisa-web-pro-2", "Lucida Grande", "Hiragino Sans GB", "Hiragino Sans GB W3", "Microsoft YaHei", "wenquanyi micro hei", sans-serif;
+  color: #201e26;
+  font-size: 14px;
+  background: #f0f3f5;
+}
+a {
+  color: #201e26;
+  text-decoration: none;
+}
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  vertical-align: middle;
+}
+td,
+th {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+textarea::-webkit-input-placeholder {
+  color: #add8e6;
+}
+textarea:-moz-placeholder {
+  color: #add8e6;
+}
+textarea::-moz-placeholder {
+  color: #add8e6;
+}
+textarea:-ms-input-placeholder {
+  color: #add8e6;
+}
+.l-left {
+  float: left;
+}
+.l-right {
+  float: right;
+}
+.l-float {
+  *zoom: 1;
+}
+.l-float:before,
+.l-float:after {
+  display: table;
+  content: "";
+}
+.l-float:after {
+  clear: both;
+}
+.mb {
+  margin-bottom: 8px;
+}
+.mb10 {
+  margin-bottom: 10px;
+}
+.mb20 {
+  margin-bottom: 20px;
+}
+.mt20 {
+  margin-top: 20px;
+}
+.mt40 {
+  margin-top: 40px;
+}
+.mt8 {
+  margin-top: 8px;
+}
+.mt16 {
+  margin-top: 16px;
+}
+.ml24 {
+  margin-left: 24px;
+}
+.mr8 {
+  margin-right: 8px;
+}
+.mr14 {
+  margin-right: 14px;
+}
+.mr24 {
+  margin-right: 24px;
+}
+.nav {
+  background: #fff;
+  color: #084f23;
+  font-size: 20px;
+  text-align: center;
+  height: 58px;
+  line-height: 58px;
+}
+.container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+.mian {
+  width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.font-y {
+  font-family: "Microsoft YaHei" Arial, sans-serif;
+}
+.font-s {
+  font-family: "SimSun" Arial, sans-serif;
+}
+.fontc-bai {
+  color: #ffffff;
+}
+.fontc-hei {
+  color: #373737;
+}
+.fontc-hui {
+  color: #818181;
+}
+.fontc-lv {
+  color: #084f23;
+}
+.fontc-orange {
+  color: #8f4306;
+}
+.fontc0 {
+  color: #000 !important;
+}
+.fontz36 {
+  font-size: 36px;
+}
+.fontz30 {
+  font-size: 30px;
+}
+.fontz28 {
+  font-size: 28px;
+}
+.fontz24 {
+  font-size: 24px;
+}
+.fontz18 {
+  font-size: 18px;
+}
+.fontz16 {
+  font-size: 16px;
+}
+.fontz14 {
+  font-size: 14px;
+}
+.fontz12 {
+  font-size: 12px;
+}
+.fwb {
+  font-weight: bold;
+}
+.textc {
+  text-align: center;
+}
+.textl {
+  text-align: left;
+}
+.textr {
+  text-align: right;
+}
+.header {
+  display: block;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  height: auto;
+  overflow: hidden;
+}
+.header .top-line {
+  display: block;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  height: 4px;
+  background: linear-gradient(to right, #448dc2, #6ff0ff);
+  background: -webkit-linear-gradient(to right, #448dc2, #6ff0ff);
+  background: -o-linear-linear-gradient(to right, #448dc2, #6ff0ff);
+  background: -moz-linear-gradient(to right, #448dc2, #6ff0ff);
+}
