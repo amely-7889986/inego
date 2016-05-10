@@ -1,127 +1,40 @@
-.l-banner-box{
-    width: 100%;
-    height: 528px;
-    display: block;
-    overflow: hidden;
-    text-align: center;
+.lubo{
+    width: 100%; min-width:1000px;clear: both; position: relative; height:368px;
 }
-.section-focus-pic
-{
-    position: relative;
+.lubo_box{
+    position: relative; width: 100%; height:368px;
+}
+.lubo_box li{
+    float: left;position: absolute; top: 0; left: 0; width: 100%; height:368px; opacity: 0;filter:alpha(opacity=0);
+}
+.lubo_box li a{
+    display: block;width: 100%;  height: 100%;
+}
 
-    overflow: hidden;
+.lubo_box li img{
+    width: 100%; height: 368px;
+}
+/*圆点*/
+.cir_box{
+    overflow: hidden; position: absolute; z-index: 100;
+}
+.cir_box li{
+    float: left; width: 30px; height: 5px; margin:0 5px; cursor: pointer; background: #fff; opacity: 0.8;filter:alpha(opacity=80);
+}
+.cir_on{
+    background: #000 !important;
+}
 
-    width: 100%;
-    text-align: center;
-    height: 528px;
-    margin: 0 auto 20px auto;
+/*按钮*/
+.lubo_btn{
+    position: absolute; width: 100%; top: 128px;
 }
-.section-focus-pic ul li
-{
-    position: absolute;
-    top: 0;
-    left: 1600px;
-
-    width: 100%;
-    height: 528px;
-    text-align: center;
+.left_btn, .right_btn{
+    width: 24px; height: 60px; background: #000;opacity: 0.8;filter:alpha(opacity=60); cursor: pointer; color: #fff; line-height: 60px; font-size: 20px; text-align: center;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;
 }
-.section-focus-pic ul li a
-{
-    text-align: center;
-}
-.section-focus-pic .pages
-{
-    width: 100%;
-    height: 528px;
-    text-align: center;
-}
-.section-focus-pic .controler
-{
-    position: absolute;
-    right: 426px;
-    bottom: 26px;
-}
-.section-focus-pic .controler b
-{
-    display: block;
+.left_btn{
     float: left;
-    overflow: hidden;
-
-    width: 58px;
-    height: 12px;
-    margin: 0 0 0 14px;
-
-    cursor: pointer;
-    text-indent: -9999px;
-
-    background: url(../../images/btn-banner-nor.png) center center no-repeat;
 }
-.section-focus-pic .controler b.down
-{
-    background: url(../../images/btn-banner-hov.png) center center no-repeat;
-}
-.section-focus-pic .controler2 a
-{
-    position: absolute;
-    top: 50%;
-
-    display: block;
-
-    width: 42px;
-    height: 92px;
-    margin-top: -46px;
-}
-.section-focus-pic .controler2 a i
-{
-    display: block;
-
-    width: 42px;
-    height: 92px;
-
-    cursor: pointer;
-}
-.section-focus-pic .controler2 .prev
-{
-    left: 5px;
-}
-.section-focus-pic .controler2 .prev i
-{
-    background: url(../../images/btn-prev.png) center center no-repeat;
-
-    .opacity(80%);
-}
-.section-focus-pic .controler2 .prev:hover i
-{
-    .opacity(100%);
-}
-.section-focus-pic .controler2 .next
-{
-    right: 5px;
-}
-.section-focus-pic .controler2 .next i
-{
-    background: url(../../images/btn-next.png) center center no-repeat;
-
-    .opacity(80%);
-}
-.section-focus-pic .controler2 .next:hover i
-{
-    .opacity(100%);
-}
-.section-focus-pic .item-tit{
-    position: absolute;
-    top: 180px;
-    left: 84px;
-    font-size: 36px;
-    font-weight: bold;
-    width: auto;
-    height: 82px;
-    line-height: 82px;
-    color: #3b473f;
-    span{
-        background: rgba(255,255,255,0.8);
-        margin-top: 6px;
-        padding: 0 8px;
-    }
+.right_btn{
+    float: right;
 }

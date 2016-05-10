@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Inego 瀛乐购</title>
+  <link rel="stylesheet" href="css/css/mian.css">
+</head>
+
+<body>
+  <div class="container bg-w">
+    <div class="header">
+			<div class="top-line"></div>
+			<div class="nav mian l-float">
+				<div class="logo l-left"><img src="images/logo.png" alt=""></div>
+				<div class="nav-text l-left">
+					<ul class="mian" id="nav_all">
+						<li><a href="index.html">首页</a></li>
+						<li>
+						  <a href="info.html">产品分销</a>
+						  <ul class="mian" style="display: none;">
+						  	<li><a href="info.html">瀛乐购网上商城</a></li>
+						  	<li><a href="info.html">CBT商城及中心店</a></li>
+						  	<li><a href="info.html">社区及行业分销</a></li>
+						  </ul>
+						</li>
+						<li><a href="info.html">供应链服务</a></li>
+						<li><a href="info.html">供应链金融</a></li>
+						<li><a href="info.html">招商合作</a></li>
+						<li><a href="info.html">服务支持</a></li>
+						<li><a href="info.html">关于我们</a></li>
+						<li><a href="info.html">商城入口</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="mian l-float">
+		  <div class="col-link">
+		  	<a href="index.html">首页</a>
+		  	<span>></span>
+		  	<a href="info.html">解决方案</a>
+		  	<span>></span>
+		  	<a href="#" class="fontc-blue">西永保税区</a>
+		  </div>
+		  <div class="col-tab">
+		  	<li><a href="info.html" class="current">物流服务</a></li>
+		  	<li><a href="info.html">关务服务</a></li>
+		  	<li><a href="info.html">仓储服务</a></li>
+		  	<li><a href="info.html">IT服务</a></li>
+		  </div>
+		  <div class="col-info">
+		  	<div class="info-img">
+		  	  <img src="word/info-pic.png" alt="">
+		  	</div>
+		  	<div class="info-txt">
+		  		<p> 重庆西永综合保税区位于重庆市沙坪坝区西永微电子产业园区内，于2010年2月由国务院批准设立。园区规划面积10.3平方公里，分为A、B两个区块，之间由区内无障碍专用通道连接，是我国规划面积最大的综合保税区也是重庆打造内陆开放高地的重要平台。</p>
+		  		<p class="mt36">已入驻的跨境电商商家代表：
+		  		<span class="fontc-lv">白玛斯德，西港全球购，蜜芽宝贝，跨境优品，品质全球，辣妈帮。</span></p>
+		  		<p class="mt36">西永综合保税区的批准也创下了全国五个“最”：</p>
+		  		<p><span class="fontc-lv">一是审批效率最高，</span>从报批到瓜熟蒂落仅用半年时间；</p>
+		  		<p><span class="fontc-lv">二是面积最大，西永综合保税区获批面积为10.3平方公里，</span>全国第一；</p>
+		  		<p><span class="fontc-lv">三是政策最优</span> 西永综合保税区集保税区、出口加工区、保税物流区、港口功能于一身；</p>
+		  		<p><span class="fontc-lv">四是经济规模最大，</span>现已形成几千万台、几千亿元产值的笔记本电脑生产基地；</p>
+		  		<p><span class="fontc-lv">五是模式最新，</span>为落地“凤凰”栽“梧桐”，为“凤凰”飞天添“跑道”，是水到渠成、顺势而为的国门资源的服务配套。</p>
+		  		<p class="mt36">西永发展跨境电商的优势“3+1”：</p>
+		  		<p><span class="fontc-lv">1、模式领先：</span>园区搭台，电商唱戏，不参与电商同业竞争，电商与重庆海关信息平台直连。</p>
+		  		<p><span class="fontc-lv">2、优惠收费：</span>初期相关行政配套服务收费全面，扶持电商发展；目前按照全国最低标准收费，力争降低电商经营成本。</p>
+		  		<p><span class="fontc-lv">3、实力助推：</span>园区实力雄厚，建成30万方保税仓库专门用于发展跨境电商业务。目前正筹建50万方新的保税仓库，助推电商拓展升级。</p>
+		  		<p><span class="fontc-lv">4、渝新欧铁路口岸配套：</span>毗邻重庆铁路口岸和渝新欧铁路起点站，是发展对欧贸易最佳首选地。</p>
+		  		<p>西永微电子产业园区本着客户至上，竭诚配合电商协调解决海关、国检、口岸、机场事宜，打造优良的跨境电商发展环境。</p>
+		  	</div>
+		  </div>
+		</div>
+		<div class="fooder l-float">
+    	<div class="mian copyright"><span>Copy Right© 广东瀛乐购电子商务服务有限公司</span><span>电话020-62972123</span></div>
+    </div>
+  </div>
+<script type="text/javascript" src="js/jquery-1.7.2.js"></script>
+<script type="text/javascript">
+//导航下拉
+  $(function () {
+    var st = 180;
+    $('#nav_all>li').mouseenter(function () {
+        $(this).find('ul').stop(false, true).slideDown(st);
+    }).mouseleave(function () {
+        $(this).find('ul').stop(false, true).slideUp(st);
+    });
+  });
+</script>
+</body>
+</html>

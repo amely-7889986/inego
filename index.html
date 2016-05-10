@@ -14,11 +14,11 @@
 			<div class="nav mian l-float">
 				<div class="logo l-left"><img src="images/logo.png" alt=""></div>
 				<div class="nav-text l-left">
-					<ul>
+					<ul class="mian" id="nav_all">
 						<li><a href="index.html">首页</a></li>
 						<li>
 						  <a href="info.html">产品分销</a>
-						  <ul>
+						  <ul class="mian" style="display: none;">
 						  	<li><a href="info.html">瀛乐购网上商城</a></li>
 						  	<li><a href="info.html">CBT商城及中心店</a></li>
 						  	<li><a href="info.html">社区及行业分销</a></li>
@@ -35,60 +35,197 @@
 			</div>
 		</div>
 		<div class="l-banner-box">
-			<div class="section-focus-pic" id="section-focus-pic">
-      <div class="pages" data-scro="list">
-        <ul>
-          <li class="item" style="left:0px;">
+			<div class="lubo">
+        <ul class="lubo_box">
+          <li style=" opacity: 1;filter:alpha(opacity=100);">
             <a href="#" target="_blank">
-              <img src="word/banner.png" alt="" width="1600px" height="528">
+              <img src="word/banner.png" alt="">
             </a>
           </li>
-          <li class="item" style="left:0px;">
+          <li>
             <a href="#" target="_blank">
-              <img src="word/banner.png" alt="" width="1600px" height="528">
+              <img src="word/banner.png" alt="">
             </a>
           </li>
-          <li class="item" style="left:0px;">
+          <li>
             <a href="#" target="_blank">
-              <img src="word/banner.png" alt="" width="1600px" height="528">
+              <img src="word/banner.png" alt="">
             </a>
           </li>
-          <li class="item" style="left:0px;">
+          <li>
             <a href="#" target="_blank">
-              <img src="word/banner.png" alt="" width="1600px" height="528">
+              <img src="word/banner.png" alt="">
             </a>
           </li>
-          <li class="item" style="left:0px;">
+          <li>
             <a href="#" target="_blank">
-              <img src="word/banner.png" alt="" width="1600px" height="528">
+              <img src="word/banner.png" alt="">
             </a>
           </li>
         </ul>
-      </div>
-      <div class="controler" data-scro="controler">
-        <b class="down">1</b><b>2</b><b>3</b><b>4</b><b>5</b>
-      </div>
-      <div class="controler2" data-scro="controler2">
-        <a href="javascript:;" class="prev"><i></i></a>
-        <a href="javascripr:;" class="next"><i></i></a>
       </div>
     </div>
     <div class="mian l-float">
     	<div class="service l-float">
     		<ul>
     			<li class="supply"><a href="info.html">供应链服务</a></li>
-    			<li class="place"><a href="info.html">O2O分销</a></li>
+    			<li class="o2o"><a href="info.html">O2O分销</a></li>
     			<li class="finance"><a href="info.html">金融配套服务</a></li>
     			<li class="leasing"><a href="info.html">招商合作</a></li>
     		</ul>
     	</div>
     	<div class="advan l-float">
-    		<div class="col-tit"></div>
+    		<div class="col-tit">
+    			<h1><span>服务优势</span></h1>
+    	    <h3>SERVICE</h3>
+    		</div>
+    		<div class="col-ic l-float">
+    			<ul>
+    				<li class="col-4">
+    					<div class="col-img"><img src="images/ic-sun.png" alt=""></div>
+    					<h2>阳光规范</h2>
+    					<div class="col-txt">国家口岸A类平台清关安全有保障</div>
+    				</li>
+    				<li class="col-4">
+    					<div class="col-img"><img src="images/ic-advanced.png" alt=""></div>
+    					<h2>先进高效</h2>
+    					<div class="col-txt">海关A级信用企业24小时快速清关</div>
+    				</li>
+    				<li class="col-4">
+    					<div class="col-img"><img src="images/ic-cost.png" alt=""></div>
+    					<h2>成本更优</h2>
+    					<div class="col-txt">快速通关，自有快速，降低成本</div>
+    				</li>
+    				<li class="col-4">
+    					<div class="col-img"><img src="images/ic-full.png" alt=""></div>
+    					<h2>全程服务</h2>
+    					<div class="col-txt">集货、运输、通关、配送，全程跟踪服务</div>
+    				</li>
+    			</ul>
+    		</div>
+    		<div class="col-ic l-float">
+    			<ul>
+    				<li class="col-3">
+    					<div class="col-img"><img src="images/ic-channel.png" alt=""></div>
+    					<h2>全渠道分销</h2>
+    					<div class="col-txt">“天地人”三网结合全方位立体分销网络</div>
+    				</li>
+    				<li class="col-3">
+    					<div class="col-img"><img src="images/ic-settle.png" alt=""></div>
+    					<h2>快速结算</h2>
+    					<div class="col-txt">专业集单结算的金融解决方案</div>
+    				</li>
+    				<li class="col-3">
+    					<div class="col-img"><img src="images/ic-data.png" alt=""></div>
+    					<h2>大数据分析</h2>
+    					<div class="col-txt">数据分析实时对接</div>
+    				</li>
+    			</ul>
+    		</div>
     	</div>
+    </div>
+    <div class="case-pic l-float">
+      <div class="mian l-float">
+    	  <div class="col-tit">
+    	    <h1><span class="bg-w">最新案例</span></h1>
+    	    <h3>NEW CASE</h3>
+    	  </div>
+    		<div id="wrap" class="wrap">
+    			<ul>
+    				<li>
+    					<div class="wrap-pic">
+    					  <a href="info.html"><img src="word/case-pic-1.png" alt=""></a>
+    					</div>
+    					<div class="wrap-info"><a href="info.html">我司参加2015中国·重庆国际跨境</a></div>
+    				</li>
+    				<li>
+    					<div class="wrap-pic">
+    						<a href=""><img src="word/case-pic-2.png" alt=""></a>
+    					</div>
+    					<div class="wrap-info"><a href="">“一带一路”分析报告发布会在渝</a></div>
+    				</li>
+    				<li>
+    					<div class="wrap-pic">
+    						<a href=""><img src="word/case-pic-3.png" alt=""></a>
+    					</div>
+    					<div class="wrap-info"><a href="">瀛乐购签约入驻重庆西永微电园</a></div>
+    				</li>
+    				<li>
+    					<div class="wrap-pic">
+    						<a href=""><img src="word/case-pic-4.png" alt=""></a>
+    					</div>
+    					<div class="wrap-info"><a href="">我司受邀参加2015韩国国际美容博展</a></div>
+    				</li>
+    				<li>
+    					<div class="wrap-pic">
+    						<a href=""><img src="word/case-pic-1.png" alt=""></a>
+    					</div>
+    					<div class="wrap-info"><a href="">我司参加2015中国·重庆国际跨境</a></div>
+    				</li>
+    				<li>
+    					<div class="wrap-pic">
+    						<a href=""><img src="word/case-pic-2.png" alt=""></a>
+    					</div>
+    					<div class="wrap-info"><a href="">“一带一路”分析报告发布会在渝</a></div>
+    				</li>
+    				<li>
+    					<div class="wrap-pic">
+    						<a href=""><img src="word/case-pic-3.png" alt=""></a>
+    					</div>
+    					<div class="wrap-info"><a href="">瀛乐购签约入驻重庆西永微电园</a></div>
+    				</li>
+    				<li>
+    					<div class="wrap-pic">
+    						<a href=""><img src="word/case-pic-4.png" alt=""></a>
+    					</div>
+    					<div class="wrap-info"><a href="">我司受邀参加2015韩国国际美容博展</a></div>
+    				</li>
+    			</ul>
+    		</div>
+    		<input type="button" id="prev1" class="prev1" />
+        <input type="button" id="next1" class="next1" />
+    	</div>
+    </div>
+    <div class="fooder l-float">
+    	<div class="mian copyright"><span>Copy Right© 广东瀛乐购电子商务服务有限公司</span><span>电话020-62972123</span></div>
     </div>
 	</div>
 
-<script src="js/jquery-1.9.1.min.js" type="text/javascript" charset="utf-8"></script>
-<script src="js/banner.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript" src="js/jquery-1.7.2.js"></script>
+<script type="text/javascript" src="js/lubotu.js"></script>
+<script type="text/javascript">
+//导航下拉
+  $(function () {
+    var st = 180;
+    $('#nav_all>li').mouseenter(function () {
+        $(this).find('ul').stop(false, true).slideDown(st);
+    }).mouseleave(function () {
+        $(this).find('ul').stop(false, true).slideUp(st);
+    });
+  });
+//广告图片轮播
+$(function(){
+
+    $(".lubo").lubo({
+
+    });
+
+})
+
+</script>
+<script src="js/marquee.js" type="text/javascript"></script>
+<script type="text/javascript">
+//案例图片轮播
+    $(function() {
+        $('#wrap').marquee({
+            auto: false,
+            speed: 1000,
+            showNum: 4,
+            stepLen: 4,
+            prevElement: $('#prev1'),
+            nextElement: $('#next1')
+        });
+    })
+</script>
 </body>
 </html>
