@@ -1,0 +1,15 @@
+.fooder {
+  display: block;
+  height: 84px;
+  line-height: 84px;
+  padding-left: 16px;
+  color: #fff;
+  background: #201e26;
+}
+.fooder .copyright {
+  display: block;
+}
+.fooder .copyright span {
+  display: inline-block;
+  margin-right: 14px;
+}

@@ -1,0 +1,68 @@
+.col-link {
+  display: block;
+  width: auto;
+  height: 24px;
+  line-height: 24px;
+  font-size: 14px;
+  margin-top: 38px;
+}
+.col-link span {
+  display: inline-block;
+  float: left;
+  margin-right: 8px;
+}
+.col-link a {
+  display: inline-block;
+  float: left;
+  margin-right: 8px;
+}
+.col-tab {
+  display: block;
+  width: auto;
+  height: 38px;
+  margin-top: 24px;
+}
+.col-tab li {
+  display: block;
+  float: left;
+  width: 138px;
+  height: 38px;
+  margin-right: 26px;
+}
+.col-tab li a {
+  display: inline-block;
+  width: 138px;
+  height: 38px;
+  line-height: 38px;
+  text-align: center;
+  color: #448dc2;
+  border-radius: 8px;
+  border: 1px solid #04c191;
+}
+.col-tab li a:hover {
+  background: url(../../images/infotab-bg.png) repeat-x;
+  border: none;
+  color: #fff;
+  transition: 0.2s;
+}
+.col-tab .current {
+  background: url(../../images/infotab-bg.png) repeat-x;
+  border: none;
+  color: #fff;
+}
+.col-info {
+  margin-top: 28px;
+}
+.col-info .info-img {
+  display: block;
+  width: 1200px;
+  height: auto;
+  margin-bottom: 42px;
+}
+.col-info .info-txt {
+  display: block;
+  padding: 0 16px;
+  margin-bottom: 36px;
+  font-size: 18px;
+  line-height: 36px;
+}
